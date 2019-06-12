@@ -1,0 +1,123 @@
+<html>
+<head>
+<script>
+
+function hello(){
+
+// print any things
+//alert("hello");
+//document.write("hello student ");
+console.log("Hello");
+
+//create variable 
+
+var a;
+
+a=10;
+b=20;
+console.log(a)
+if(a>b){
+
+console.log("a is gt");
+}
+else {
+
+console.log("b is gt");
+}
+
+}
+function hello2(){
+
+// print any things
+//alert("hello");
+//document.write("hello student ");
+console.log("Hello2");
+
+//create variable 
+
+for(var i=0; i<10; i++){
+
+console.log("loop value"+i*2);
+
+}
+
+
+}
+
+function helloName(x)
+{
+
+
+console.log("Hllo"+x);
+
+}
+
+function add(x)
+{
+var x=document.getElementById("num1").value;
+var y=document.getElementById("num2").value;
+x= parseInt(x);
+y= parseInt(y);
+
+if(x!=" " && x==='NaN'){
+	if(x>y){
+	var z= x-y;
+	}
+	else {
+	var z= x+y;
+	}
+	document.getElementById("res").value=z;
+	}
+else{
+
+alert("Please enter X value");
+}
+
+}
+
+
+
+
+function checked(){
+
+var a=10;
+var b='10'
+
+if(a===b){
+
+console.log("Equal");
+
+
+}
+
+else {
+
+console.log("Not Equal");
+}
+
+}
+
+</script>
+
+
+</head>
+<body>
+<input type="text" name="" id="num1" />
+<input type="text" name="" id="num2" />
+<input type="text" name="" id="res" />
+<button onclick="add();">Click For Add  </button>
+
+
+
+<button onclick="checked();">Clcik here checked  </button>
+
+
+<button onclick="hello();">Clcik here  </button>
+<button onclick="hello2();">Clcik here  </button>
+<button onclick="helloName('shyam');">Clcik here  </button>
+
+
+
+</body>
+
+</html>
